@@ -20,7 +20,7 @@ const Section: FC<{ className?: string; heading: ReactNode; items: typeof ALL_FO
       </h2>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-5 sm:gap-6">
         {Object.entries(items).map(([key, { label }]) => (
-          <button key={key} className="btn-outline btn-accent btn">
+          <button key={key} className="btn-accent btn-outline btn">
             {label}
           </button>
         ))}
@@ -31,7 +31,7 @@ const Section: FC<{ className?: string; heading: ReactNode; items: typeof ALL_FO
 
 export default function App() {
   return (
-    <div className="flex w-full flex-col gap-2 p-5 sm:gap-4 sm:p-16">
+    <div className="flex w-full flex-col gap-2 sm:gap-4">
       <h1 className="text-3xl font-extrabold tracking-tight text-primary sm:text-5xl">Pick one to explore recipes!</h1>
       <div className="divider" />
       <Section className="mt-2 sm:mt-4" heading="Cuisines" items={ALL_CUISINES} />

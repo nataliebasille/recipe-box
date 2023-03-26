@@ -22,4 +22,4 @@ export const useThemeToggle = () => {
   );
 };
 
-export { useSetTheme, ThemeProvider };
+export { ThemeProvider };

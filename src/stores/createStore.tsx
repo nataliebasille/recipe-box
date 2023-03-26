@@ -23,8 +23,8 @@ export const createStore = <TStore extends {}>(initialValue: TStore) => {
     const get = useCallback(() => store.current, []);
     const set = useCallback((changes: Partial<TStore>) => {
       store.current = {
-        ...changes,
         ...store.current,
+        ...changes,
       };
       subscriptions.current?.forEach((callback) => {
         callback(store.current);
