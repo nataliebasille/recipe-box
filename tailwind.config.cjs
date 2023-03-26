@@ -4,7 +4,8 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: ["cupcake", "dark", "cmyk", "pastel", "aqua", "emerald"]
 };
 
 module.exports = config;
