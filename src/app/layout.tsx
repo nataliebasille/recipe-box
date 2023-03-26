@@ -33,7 +33,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
               <div className="hidden flex-none lg:block">
                 <ul className="menu menu-horizontal">
                   <li>
-                    <SettingsLink activeClassName="rounded bg-accent text-content-accent" />
+                    <SettingsLink activeClassName="rounded bg-accent text-accent-content" />
                   </li>
                 </ul>
               </div>
@@ -46,7 +46,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
               <div className="flex h-16 items-center border-b border-gray-300 px-4 text-2xl">Menu</div>
               <ul className="menu">
                 <li>
-                  <SettingsLink activeClassName="bg-accent" onClick={toggleSidebar} />
+                  <SettingsLink activeClassName="bg-accent text-accent-content" onClick={toggleSidebar} />
                 </li>
               </ul>
             </div>
