@@ -3,7 +3,6 @@
 import { ThemeProvider, useTheme } from "~/stores/themeStore";
 import "../styles/globals.css";
 import { FC, ReactNode, useCallback, useRef } from "react";
-import { useBreakpoint } from "~/hooks/useBreakpoint";
 import { MenuIcon } from "~/icons/menuIcon";
 import { SettingsLink } from "~/components/links/settingsLink";
 
@@ -34,7 +33,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
               <div className="hidden flex-none lg:block">
                 <ul className="menu menu-horizontal">
                   <li>
-                    <SettingsLink />
+                    <SettingsLink activeClassName="rounded bg-accent text-content-accent" />
                   </li>
                 </ul>
               </div>
@@ -43,11 +42,14 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
           </div>
           <div className="drawer-side">
             <label htmlFor="sidebar" className="drawer-overlay"></label>
-            <ul className="menu w-80 bg-base-100 p-4">
-              <li>
-                <SettingsLink onClick={toggleSidebar} />
-              </li>
-            </ul>
+            <div className="w-80 bg-base-100">
+              <div className="flex h-16 items-center border-b border-gray-300 px-4 text-2xl">Menu</div>
+              <ul className="menu">
+                <li>
+                  <SettingsLink activeClassName="bg-accent" onClick={toggleSidebar} />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </body>
