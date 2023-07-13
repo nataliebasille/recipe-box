@@ -1,11 +1,14 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import type { ReactNode } from "react";
 import "~/styles/globals.css";
 
 const MyApp = ({ children }: { children: ReactNode }) => {
   return (
-    <html>
-      <body>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html>
+        <body>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 };
 
