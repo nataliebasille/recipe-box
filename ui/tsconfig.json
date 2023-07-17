@@ -1,14 +1,15 @@
 {
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "plugins": [
-        {
-          "name": "next"
-        }
-      ]
-  },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-  ],
-}
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "plugins": [
+          {
+            "name": "next"
+          }
+        ]
+    },
+    "include": [
+      "next-env.d.ts",
+      ".next/types/**/*.ts"
+    ],
+  }
+  

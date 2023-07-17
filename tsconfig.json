@@ -34,7 +34,7 @@
   },
   "include": [
     ".eslintrc.cjs",
-    "ui/next-env.d.ts",
+    "ui_old/next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
