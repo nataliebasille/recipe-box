@@ -1,4 +1,4 @@
-import { createContainer } from "~/core/di";
+import { createContainer } from "~/ui/di";
 import { accessors, projections } from "./db";
 
 export const di = createContainer({

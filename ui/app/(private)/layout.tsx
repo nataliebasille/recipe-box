@@ -1,5 +1,4 @@
-import { SignOutButton, auth, currentUser } from "@clerk/nextjs";
-import Link from "next/link";
+import { SignOutButton } from "@clerk/nextjs";
 import type { ReactNode } from "react";
 
 export default function MainPrivateLayout({
